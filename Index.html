@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./ASSETS/urlicon.png" type="image/x-icon">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css"> 
+</head>
+<body>
+<div class="back">
+    <nav id="desktop-nav">
+        <div class="logo">Pranay Jujjuri</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Pranay Jujjuri</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#resume" onclick="toggleMenu()">Resume</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section-pic-container">
+            <img src="./ASSETS/profile.jpg" alt="">
+        </div>
+        <div class="section-text">
+            <p class="section-text-p1">Hello, I'm</p>
+            <h1 class="title">Pranay Jujjuri</h1>
+            <p class="section-text-p2">Software Engineer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./ASSETS/Jujjuri_Pranay.docx.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact' ">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./ASSETS/linked-in.png" alt="" class="icon" onclick="location.href='https://linked.com/' ">
+                <img src="./ASSETS/github.png" alt="" class="icon" onclick="location.href='https://github.com/' ">
+                <img src="./ASSETS/insta.png" alt="" class="icon" onclick="location.href='https://instagram.com/' ">
+            </div>
+        </div>
+    </section>
+</div>
+    <section id="about">
+        <p class="section-text-p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section-pic-container">
+                <img src="./ASSETS/pro-3 (2).jpg" alt="profle pic" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <img src="./ASSETS/experience.png" alt="experience icon" class="icon" >
+                        <h3>Experience</h3>
+                        <p>Fresher</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./ASSETS/education.png" alt="education icon" class="icon" >
+                        <h3>Education</h3>
+                        <p>B.Tech - Electronics & Communications</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Ex ut sequi cum fugiat iste! Dolor, error tempore quas minus 
+                        facere ipsam aperiam ipsa porro reprehenderit voluptatum 
+                        asperiores laudantium, sunt beatae.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <p class="section-text-p1">Explore My</p>
+        <h1 class="title">Skills & Certifications</h1>
+        <div class="skills-details-container">
+            <div class="about-container">
+                <div class="details-container">
+                    <h2 class="skills-sub-title">Java Fullstack</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./ASSETS/verify.png" alt="skills icon" class="icon">
+                            <div>
+                                <h4>HTML</h4>
+                                <P></P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./ASSETS/verify.png" alt="skills icon" class="icon">
+                            <div>
+                                <h4>CSS</h4>
+                                <P></P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./ASSETS/verify.png" alt="skills icon" class="icon">
+                            <div>
+                                <h4>JAVASCRIPT</h4>
+                                <P></P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./ASSETS/verify.png" alt="skills icon" class="icon">
+                            <div>
+                                <h4>SQL</h4>
+                                <P></P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./ASSETS/verify.png" alt="skills icon" class="icon">
+                            <div>
+                                <h4>CORE JAVA</h4>
+                                <P></P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./ASSETS/verify.png" alt="skills icon" class="icon">
+                            <div>
+                                <h4>ADVANCE JAVA</h4>
+                                <P></P>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="skills-sub-title">Others</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./ASSETS/verify.png" alt="skills icon" class="icon">
+                            <div>
+                                <h4>C</h4>
+                                <P></P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./ASSETS/verify.png" alt="skills icon" class="icon">
+                            <div>
+                                <h4>Core Subject</h4>
+                                <P></P>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="skills-sub-title">Certifications</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./ASSETS/certificates.png" alt="certificates icon" class="icon">
+                            <div>
+                                <h4>Java Fullstack</h4>
+                                <P></P>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <p class="section-text-p1">Explore My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="skills-details-container">
+            <div class="about-container">
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./ASSETS/circuit-2.jpg" alt="project-1" class="project-img">
+                        </div>
+                        <h2 class="skills-sub-title project-title">Auto Engine Locking System</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='http://github.com' ">Github</button>
+                            <button class="btn btn-color-2 project-btn" onclick="togglePopup()">Description</button>
+                        </div>
+                        <div class="popup" id="popup-1">
+                            <div class="overlay">
+                                <div class="content">
+                                    <div class="close-btn" onclick="togglePopup()">&times;</div>
+                                    <br><br>
+                                    <h2>Auto Engine Locking System</h2>
+                                    <br>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Recusandae unde qui officiis fuga rerum earum enim at ipsam
+                                            magni quis, dolorem sunt voluptatum sint dolores 
+                                            voluptatibus quia fugit repellat rem.
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./ASSETS/circuit-1.jpg" alt="project-2" class="project-img">
+                    </div>
+                    <h2 class="skills-sub-title project-title">Child Rescue System From Borewell</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='http://github.com' ">Github</button>
+                        <button class="btn btn-color-2 project-btn" onclick="togglePopup()">Description</button>
+                    </div>
+                    <div class="popup" id="popup-2">
+                        <div class="overlay">
+                            <div class="content">
+                                <div class="close-btn" onclick="togglePopup()">&times;</div>
+                                <br><br>
+                                <h2>Child Rescue System From Borewell</h2>
+                                <br>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Recusandae unde qui officiis fuga rerum earum enim at ipsam
+                                        magni quis, dolorem sunt voluptatum sint dolores 
+                                        voluptatibus quia fugit repellat rem.
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-container color-container details-container-3">
+                    <div class="article-container">
+                        <img src="./ASSETS/expenses.jpg" alt="project-3" class="project-img">
+                    </div>
+                    <h2 class="skills-sub-title project-title">Expenses Tracker Using Advance Java</h2>
+                    <div class="btn-container btn-3">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='http://github.com' ">Github</button>
+                        <button class="btn btn-color-2 project-btn" onclick="togglePopup()">Description</button>
+                    </div>
+                    <div class="popup" id="popup-3">
+                        <div class="overlay">
+                            <div class="content">
+                                <div class="close-btn" onclick="togglePopup()">&times;</div>
+                                <br><br>
+                                <h2>Expenses Tracker</h2>
+                                <br>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Recusandae unde qui officiis fuga rerum earum enim at ipsam
+                                        magni quis, dolorem sunt voluptatum sint dolores 
+                                        voluptatibus quia fugit repellat rem.
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <p class="section-text-p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./ASSETS/mail.png" alt="mail icon" class="icon contact-icon">
+                <p><a href="mailto:pranayjujjuri@gmail.com">pranayjujjuri@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./ASSETS/linkedin.png" alt="linked-in icon" class="icon contact-icon">
+                <p><a href="http://www.linkedIn.com">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 pranay. All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
