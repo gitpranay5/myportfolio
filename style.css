@@ -99,6 +99,7 @@ a:hover{
 }
 .menu-links a:hover{
     color: gray;
+    transform: scale(1.05);
 }
 .menu-links li{
     list-style: none;
@@ -130,7 +131,7 @@ a:hover{
 }
 .hamburger-icon span:nth-child(2){
    opacity: 1;
-   transition: opacity 0.5s;
+   transition: opacity 0.5s 0.2s;
 }
 .hamburger-icon span:last-child{
     transform: none;
