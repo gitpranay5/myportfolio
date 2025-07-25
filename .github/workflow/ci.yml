@@ -1,0 +1,46 @@
+name: CI
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - test
+  pull_request:
+    branches:
+      - main
+jobs:
+  sonarqube:
+    name: SonarQube
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
+      - name: SonarQube Scan
+        uses: SonarSource/sonarqube-scan-action@v5
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
+  build:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Upload Portfolio files
+        uses: actions/upload-artifact@v4
+        with:
+          name: portfolio-files
+          path: |
+            Index.html
+            style.css
+            script.js
+            mediaqueries.css
+            ASSETS/
